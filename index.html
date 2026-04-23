@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ================================================
+       META TAGS — SEO & OPEN GRAPH
+       ================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Matheus Costa de Jesus | CS Student &amp; Developer</title>
+  <meta name="description" content="Portfólio de Matheus Costa de Jesus — Estudante de Ciência da Computação com experiência em Java, Python, Linux e Segurança da Informação. Projetos com LUKS2, Docker e hardening.">
+  <meta name="author" content="Matheus Costa de Jesus">
+  <meta name="keywords" content="Matheus Costa de Jesus, Ciência da Computação, Java, Python, Linux, Segurança, LUKS2, Docker, Portfólio, Desenvolvedor, Bahia">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Matheus Costa de Jesus | CS Student &amp; Developer">
+  <meta property="og:description" content="Portfólio profissional — Clean, semântico, acessível. Conheça meus projetos e trajetória em tecnologia.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/070709/E63946?text=%E2%96%B2+Matheus+Costa+de+Jesus">
+  <meta property="og:url" content="https://mathdejesus.github.io/portfolio/">
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://mathdejesus.github.io/portfolio/">
+
+  <!-- ================================================
+       FONTS — GOOGLE FONTS (Bebas Neue, Barlow, IBM Plex Mono)
+       ================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- ================================================
+       MAIN STYLESHEET
+       ================================================ -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ================================================
+       THEME TOGGLE CHECKBOX — FIRST CHILD OF BODY
+       Controls light/dark mode via CSS sibling selector.
+       ================================================ -->
+  <input type="checkbox" id="theme-toggle" aria-hidden="true" tabindex="-1">
+
+  <!-- ================================================
+       SKIP TO CONTENT — ACCESSIBILITY UTILITY
+       Allows keyboard users to bypass repeated navigation.
+       ================================================ -->
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ================================================
+       HEADER — Site identity, navigation & theme toggle
+       ================================================ -->
+  <header class="site-header" aria-label="Cabeçalho do site">
+    <div class="container header-inner">
+      <!-- Logo / Brand: ▲ Avicii triangle in gold + Name -->
+      <div class="brand">
+        <span class="brand__triangle" aria-hidden="true">▲</span>
+        <span class="brand__name">Matheus Costa de Jesus</span>
+      </div>
+
+      <!-- Navigation — anchor links to sections -->
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">Sobre</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projetos</a></li>
+          <li><a href="#experience" class="nav-link">Experiência</a></li>
+          <li><a href="#education" class="nav-link">Educação</a></li>
+          <li><a href="#certifications" class="nav-link">Certificações</a></li>
+        </ul>
+      </nav>
+
+      <!-- Theme Toggle Label — styled as sun/moon -->
+      <label for="theme-toggle" class="theme-toggle-label" aria-label="Alternar entre modo claro e escuro">
+        <span class="theme-toggle-icon" aria-hidden="true">☾</span>
+        <span class="theme-toggle-icon" aria-hidden="true">☀</span>
+      </label>
+    </div>
+  </header>
+
+  <!-- ================================================
+       MAIN CONTENT — ID for skip link
+       ================================================ -->
+  <main id="main-content">
+
+    <!-- ================================================
+         HERO SECTION — Diagonal accent + headline
+         ================================================ -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-container">
+        <div class="hero__content">
+          <h1 id="hero-heading" class="hero__title">
+            <span class="hero__greeting">Olá, eu sou</span>
+            <span class="hero__name">Matheus Costa</span>
+          </h1>
+          <p class="hero__subtitle">
+            Estudante de Ciência da Computação • Desenvolvedor • Entusiasta de Segurança &amp; Infraestrutura Linux
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">Contato</a>
+            <a href="assets/Matheus_Costa_de_Jesus_PT-BR_Geral.pdf" class="btn btn--outline" target="_blank" rel="noopener">Currículo (PDF)</a>
+          </div>
+        </div>
+        <!-- Decorative element (halftone & diagonal stripe applied via CSS) -->
+        <div class="hero__visual" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         ABOUT SECTION — Professional summary
+         ================================================ -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Sobre mim
+        </h2>
+        <div class="about__grid">
+          <div class="about__text">
+            <p class="lead">
+              <strong>Computer Science student (6º semestre)</strong> com experiência prática em desenvolvimento Java e Python, administração de sistemas Linux e segurança da informação. Iniciativa comprovada através de projetos pessoais de infraestrutura com criptografia completa de disco (LUKS2), containerização Docker e acesso remoto seguro via SSH.
+            </p>
+            <p>
+              Utilizo ferramentas de IA como GitHub Copilot e Claude (Anthropic) para acelerar ciclos de desenvolvimento e documentação. Busco uma oportunidade de estágio ou posição júnior em TI para contribuir com soluções robustas e seguras, alinhadas às melhores práticas do mercado.
+            </p>
+          </div>
+          <aside class="about__info" aria-label="Informações de contato e localização">
+            <ul class="info-list">
+              <li><strong>Localização:</strong> Lauro de Freitas, Bahia, Brasil</li>
+              <li><strong>Email:</strong> <a href="mailto:matheuscosta.jesus@outlook.com">matheuscosta.jesus@outlook.com</a></li>
+              <li><strong>Telefone:</strong> <a href="tel:+5571996080859">+55 71 9 9608-0859</a></li>
+              <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/matheus-costa-de-jesus-/" target="_blank" rel="noopener">/in/matheus-costa-de-jesus-</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/mathdejesus" target="_blank" rel="noopener">mathdejesus</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SKILLS SECTION — ▲ Avicii gold bullets
+         ================================================ -->
+    <section id="skills" class="section skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Competências Técnicas
+        </h2>
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <article class="skill-category">
+            <h3 class="skill-category__title">Linguagens</h3>
+            <ul class="skill-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>Golang (em progresso)</li>
+              <li>JavaScript (em progresso)</li>
+            </ul>
+          </article>
+          <!-- OS & Platforms -->
+          <article class="skill-category">
+            <h3 class="skill-category__title">Sistemas Operacionais</h3>
+            <ul class="skill-list">
+              <li>Linux (Debian, Fedora e Ubuntu)</li>
+              <li>Windows</li>
+            </ul>
+          </article>
+          <!-- Tools & DevOps -->
+          <article class="skill-category">
+            <h3 class="skill-category__title">Ferramentas & DevOps</h3>
+            <ul class="skill-list">
+              <li>Git, GitHub</li>
+              <li>Docker</li>
+              <li>SSH</li>
+              <li>IntelliJ IDEA, VS Code</li>
+              <li>SDKMAN, Maven e Spring boot</li>
+            </ul>
+          </article>
+          <!-- Security & Infrastructure -->
+          <article class="skill-category">
+            <h3 class="skill-category__title">Segurança & Infraestrutura</h3>
+            <ul class="skill-list">
+              <li>LUKS2 (full‑disk encryption)</li>
+              <li>Hardening Linux</li>
+              <li>Contêineres Docker</li>
+              <li>Redes TCP/IP</li>
+              <li>SSH seguro</li>
+            </ul>
+          </article>
+          <!-- Concepts & Methodologies -->
+          <article class="skill-category">
+            <h3 class="skill-category__title">Conceitos & Metodologias</h3>
+            <ul class="skill-list">
+              <li>POO, Estruturas de Dados</li>
+              <li>Arquitetura de Computadores</li>
+              <li>Design de Software</li>
+              <li>Segurança da Informação</li>
+              <li>Metodologias Ágeis (Scrum, XP)</li>
+            </ul>
+          </article>
+          <!-- AI Tools -->
+          <article class="skill-category">
+            <h3 class="skill-category__title">Ferramentas de IA</h3>
+            <ul class="skill-list">
+              <li>GitHub Copilot</li>
+              <li>Claude (Anthropic)</li>
+              <li>ChatGPT</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         PROJECTS SECTION — Each project inside <article>
+         ================================================ -->
+    <section id="projects" class="section projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Projetos
+        </h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-card__title">Servidor Doméstico Autogerenciado</h3>
+            <p class="project-card__meta">
+              <a href="https://github.com/mathdejesus/homelab" target="_blank" rel="noopener" class="project-link">github.com/mathdejesus/homelab</a>
+            </p>
+            <ul class="project-highlights">
+              <li>Implantação e administração de servidor Linux (Debian 13) com foco em segurança e criptografia completa de disco via LUKS2.</li>
+              <li>Containerização de aplicações com Docker para reprodutibilidade de ambientes e simplificação de manutenção.</li>
+              <li>Configuração de acesso remoto seguro via SSH e compartilhamento de arquivos entre múltiplos dispositivos.</li>
+              <li>Aplicação de técnicas de hardening Linux para redução da superfície de ataque em ambiente similar a produção.</li>
+            </ul>
+          </article>
+          <!-- Additional project placeholders can be added later -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         EXPERIENCE SECTION — M. Dias Branco
+         ================================================ -->
+    <section id="experience" class="section experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 id="experience-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Experiência Profissional
+        </h2>
+        <article class="experience-card" aria-labelledby="job-title">
+          <header class="experience-card__header">
+            <h3 id="job-title" class="experience-card__title">Operador de Máquinas de Fabricação</h3>
+            <p class="experience-card__company">M. Dias Branco</p>
+            <p class="experience-card__period">
+              <time datetime="2016-12">Dezembro 2016</time> – Presente • Salvador, Bahia
+            </p>
+          </header>
+          <ul class="experience-highlights">
+            <li>Monitoramento de sistemas automatizados de produção com análise de indicadores de desempenho em tempo real.</li>
+            <li>Diagnóstico e resolução de falhas operacionais sob pressão de tempo, reduzindo paradas não planejadas.</li>
+            <li>Criação e manutenção de documentação técnica (POPs, Lições Aprendidas, Rotulagem) garantindo padronização e rastreabilidade.</li>
+            <li>Execução de setup e calibração de equipamentos durante trocas de produto, exigindo raciocínio sistemático e atenção a detalhes.</li>
+            <li>Operação sob protocolos rigorosos de qualidade e segurança em ambiente industrial regulado.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================
+         EDUCATION SECTION — Descomplica
+         ================================================ -->
+    <section id="education" class="section education" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Formação Acadêmica
+        </h2>
+        <article class="education-card">
+          <h3 class="education-card__title">Bacharelado em Ciência da Computação</h3>
+          <p class="education-card__institution">Descomplica Faculdade Digital</p>
+          <p class="education-card__period">
+            <time datetime="2023-10">Outubro 2023</time> – <time datetime="2027-12">Dezembro 2027</time> (previsão)
+          </p>
+          <p class="education-card__status">6º semestre em andamento</p>
+          <div class="education-card__subjects">
+            <h4>Disciplinas concluídas:</h4>
+            <p>Arquitetura de Computadores, Design de Software, Matemática Diferencial Aplicada, Programação Extrema (XP), Análise de Requisitos de Software, Criação e Aplicação de Sistemas, Comunicação Empresarial, Coaching e Planejamento de Carreira.</p>
+            <h4>Próximas disciplinas:</h4>
+            <p>Estruturas de Dados, Desenvolvimento Mobile, Fundamentos de Cloud Computing, Metodologias de Desenvolvimento de Software, Soluções Tecnológicas de Cloud e Redes, Segurança da Informação, Gestão Avançada de Projetos, Ciência e Análise de Dados, Arquitetura de BI e Big Data, entre outras.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CERTIFICATIONS SECTION
+         ================================================ -->
+    <section id="certifications" class="section certifications" aria-labelledby="certifications-heading">
+      <div class="container">
+        <h2 id="certifications-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Certificações
+        </h2>
+        <ul class="cert-list">
+          <li class="cert-item">English Proficiency Certificate — Voxy (Nível Intermediário)</li>
+          <li class="cert-item">Arquitetura e Organização de Computadores — Descomplica</li>
+          <li class="cert-item">Desenvolvedor Orientado a Objetos — Descomplica</li>
+          <li class="cert-item">Design de Software — Descomplica</li>
+          <li class="cert-item">Conceitos Básicos de Programação — Descomplica</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================================================
+         LANGUAGES + CONTACT (ASIDE)
+         ================================================ -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading" class="section__title">
+          <span aria-hidden="true">▲</span> Idiomas & Contato
+        </h2>
+        <div class="contact-grid">
+          <aside class="languages">
+            <h3>Idiomas</h3>
+            <ul>
+              <li><strong>Português:</strong> Nativo</li>
+              <li><strong>Inglês:</strong> Intermediário (Certificado Voxy)</li>
+            </ul>
+          </aside>
+          <aside class="social-links" aria-label="Links profissionais">
+            <h3>Conecte-se</h3>
+            <ul>
+              <li><a href="https://linkedin.com/in/matheus-costa-de-jesus-/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/mathdejesus" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="mailto:matheuscosta.jesus@outlook.com">Email</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER — Copyright & social links
+       ================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer__copyright">
+        &copy; <time datetime="2026">2026</time> Matheus Costa de Jesus.
+        <span class="footer__badge">▲ HTML5 & CSS3 • Zero JS</span>
+      </p>
+      <ul class="footer__social">
+        <li><a href="https://github.com/mathdejesus" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/matheus-costa-de-jesus-/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Decorative element: halftone background overlay (applied via CSS) -->
+</body>
+</html>
