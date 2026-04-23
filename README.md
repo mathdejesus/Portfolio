@@ -30,7 +30,7 @@
 
 This portfolio is the digital home of **Matheus Costa de Jesus**, a Computer Science student
 and IT professional based in Lauro de Freitas, Bahia, Brazil. It showcases technical skills
-in Java, Python, Golang, Linux, and cybersecurity, alongside a solid professional background
+in Java, Python, Linux, and cybersecurity, alongside a solid professional background
 in industrial automation.
 
 **Technical Purpose:**
