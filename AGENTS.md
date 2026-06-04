@@ -13,7 +13,7 @@
 
 | Arquivo | Papel |
 |---|---|
-| `index.html` | Conteúdo semântico completo (header, hero, about, skills, projects, experience, education, certifications, footer) |
+| `index.html` | Conteúdo semântico completo (header, hero, about, skills, projects, experience, education, certifications, footer) — alinhado ao CV em `MATHEUS_COSTA_DE_JESUS_PT-BR.md` |
 | `assets/css/style.css` | Todo o CSS: reset, custom properties, layout, temas (dark/light), responsivo |
 
 ## Como rodar
