@@ -35,9 +35,9 @@ em automação industrial.
 
 **Propósito Técnico:**
 O projeto demonstra domínio de HTML5 semântico, arquitetura CSS (custom properties,
-tematização via checkbox hack, CSS Grid e Flexbox), e acessibilidade web (WCAG 2.1 AA).
-Construído sem JavaScript, frameworks ou ferramentas de build — código puro e artesanal
-que prioriza performance e conformidade com padrões web.
+tematização via `prefers-color-scheme`, CSS Grid e Flexbox), e acessibilidade web
+(WCAG 2.1 AA). Construído sem JavaScript, frameworks ou ferramentas de build —
+código puro e artesanal que prioriza performance e conformidade com padrões web.
 
 **Visão Estética:**
 O design utiliza a paleta **Solarized** — um esquema de cores cuidadosamente projetado
@@ -106,7 +106,7 @@ Representa: precisão, três pilares da arte (código / infraestrutura / seguran
 | **Markup** | HTML5 — suporte semântico completo |
 | **Estilo** | CSS3 — sem pré-processadores, sem frameworks |
 | **Sistema de Design** | CSS Custom Properties com documentação inline em cada variável |
-| **Tematização** | CSS Checkbox Hack — toggle dark/light com zero JavaScript |
+| **Tematização** | `prefers-color-scheme` — reage automaticamente ao tema do sistema operacional, zero JavaScript |
 | **Layout** | CSS Grid, Flexbox, `clamp()` para tipografia fluida responsiva |
 | **Tipografia** | Google Fonts: Bebas Neue (display), Barlow (corpo), IBM Plex Mono (código) |
 | **Efeitos Decorativos** | `radial-gradient` halftone, pseudo-elementos, `backdrop-filter` blur, neon `box-shadow` |
@@ -123,7 +123,8 @@ portfolio/
 ├── README.md           — Este arquivo
 └── assets/
     ├── css/
-    │   └── style.css   — Todos os estilos: variáveis, layout, temas, acessibilidade
+    │   ├── style.css       — Base: variáveis Solarized Light + layout + componentes
+    │   └── style-dark.css  — Solarized Dark: override carregado em `prefers-color-scheme: dark`
     └── images/
         └── (vazio)     — Sem imagens externas: toda decoração é CSS-only
 ```
@@ -135,7 +136,7 @@ portfolio/
 - **HTML5 Semântico** — `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` para significado, não apresentação
 - **Acessibilidade WCAG AA** — skip link, labels ARIA, focus rings, elementos `<time>`, contraste mínimo 4.5:1
 - **Otimizado para SEO** — meta description, tags Open Graph, URL canônica, hierarquia de headings estruturada
-- **Toggle dark/light CSS-only** — checkbox hack com `input` e `label`, zero JavaScript necessário
+- **Tema automático via `prefers-color-scheme`** — Solarized Light/Dark sincronizado com o sistema operacional, zero JavaScript e zero toggle (recarregue com F5 para aplicar mudança de tema do SO)
 - **Sistema de design CSS** — todos os valores como custom properties, cada variável comentada com sua finalidade
 - **Layout responsivo** — fluido do mobile ao 4K com CSS Grid, Flexbox e `clamp()`
 - **Identidade visual dual** — Solarized Light (claro) e Solarized Dark (escuro) como sistemas de design independentes
@@ -170,7 +171,7 @@ Ou baixe o ZIP, extraia e abra `index.html` em qualquer navegador moderno.
 | `aria-label` em cada `section` | Leitores de tela anunciam a região antes de ler o conteúdo |
 | `aria-labelledby` nos cards `article` | Vincula cada card ao seu próprio heading para nome acessível |
 | `aria-hidden` nos triângulos decorativos | Impede narração de caracteres Unicode decorativos |
-| `tabindex="-1"` no `#theme-toggle` | Remove checkbox oculto da ordem de tabulação do teclado |
+| `tabindex="-1"` no toggle | (Removido — não há mais toggle na página) |
 | `:focus-visible` outline em dourado | Anel de foco visível para teclado, não acionado pelo mouse |
 | `<time datetime>` em todas as datas | Datas legíveis por máquina para tecnologia assistiva e mecanismos de busca |
 | Contraste de cor >= 4.5:1 | Ambas as paletas validadas contra mínimo WCAG AA |

@@ -23,7 +23,6 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
-  transition: background-color 0.3s ease, color 0.2s ease;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +31,8 @@ body {
 /* === 02. CSS VARIABLES & THEMING === */
 /*
  * Solarized Light is the default.
- * Dark mode (Solarized Dark) activated via checkbox hack.
+ * Solarized Dark overrides live in assets/css/style-dark.css,
+ * loaded via <link media="(prefers-color-scheme: dark)">.
  */
 :root {
   /* --- Colors (Solarized Light — default) --- */
@@ -245,53 +245,6 @@ a:focus-visible {
 .nav-link:hover {
   color: var(--color-text);
   text-shadow: none;
-}
-
-/* Theme Toggle Label */
-#theme-toggle {
-  display: none; /* hidden checkbox */
-}
-
-.theme-toggle-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-bg-card);
-  border: 1px solid var(--color-border);
-  border-radius: 40px;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  position: relative;
-  transition: background-color var(--transition), border-color var(--transition);
-}
-
-.theme-toggle-icon {
-  font-size: 1.5rem;
-  line-height: 1;
-  position: absolute;
-  transition: opacity var(--transition), transform var(--transition);
-}
-
-.theme-toggle-icon:first-child { /* ☾ moon — shown when dark mode active */
-  opacity: 0;
-  transform: rotate(-90deg) scale(0.8);
-}
-
-.theme-toggle-icon:last-child { /* ☀ sun — shown by default (light mode) */
-  opacity: 1;
-  transform: rotate(0);
-}
-
-/* When checkbox is checked (dark mode active), swap icons */
-#theme-toggle:checked ~ * .theme-toggle-icon:first-child {
-  opacity: 1;
-  transform: rotate(0) scale(1);
-}
-
-#theme-toggle:checked ~ * .theme-toggle-icon:last-child {
-  opacity: 0;
-  transform: rotate(90deg) scale(0.8);
 }
 
 /* === 06. HERO SECTION === */
@@ -704,92 +657,9 @@ body::after {
   z-index: 9999;
 }
 
-/* === 15. DARK MODE OVERRIDES (Solarized Dark) === */
+/* === 15. SOLARIZED DARK OVERRIDES === */
 /*
- * Activated via CSS checkbox hack.
- * Clean variable-based theming — no hardcoded colors needed.
+ * Moved to assets/css/style-dark.css.
+ * Theme is now decided by the OS via `prefers-color-scheme`.
+ * See style-dark.css for the dark palette and dark-specific tweaks.
  */
-
-/* 1. Rebase all CSS variables to Solarized Dark */
-#theme-toggle:checked ~ * {
-  --color-bg:           #002b36;      /* base03 */
-  --color-bg-secondary: #073642;      /* base02 */
-  --color-bg-card:      #073642;      /* base02 */
-  --color-primary:      #268bd2;      /* blue */
-  --color-secondary:    #2aa198;      /* cyan */
-  --color-accent:       #b58900;      /* yellow */
-  --color-text:         #839496;      /* base0 */
-  --color-text-muted:   #586e75;      /* base01 */
-  --color-border:       #586e75;      /* base01 */
-  --shadow-card:        0 4px 12px rgba(0, 0, 0, 0.3);
-  --glow-primary:       0 0 8px rgba(38, 139, 210, 0.4);
-  --glow-accent:        0 0 8px rgba(181, 137, 0, 0.4);
-}
-
-/* 2. Header — dark translucent glass effect */
-#theme-toggle:checked ~ .site-header {
-  background-color: rgba(0, 43, 54, 0.85);
-  border-bottom: 1px solid var(--color-border);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-@supports (backdrop-filter: blur(8px)) {
-  #theme-toggle:checked ~ .site-header {
-    background-color: rgba(0, 43, 54, 0.7);
-  }
-}
-
-/* 3. Cards — slightly lighter than background */
-#theme-toggle:checked ~ * .skill-category,
-#theme-toggle:checked ~ * .project-card,
-#theme-toggle:checked ~ * .experience-card,
-#theme-toggle:checked ~ * .education-card,
-#theme-toggle:checked ~ * .cert-item,
-#theme-toggle:checked ~ * .info-list {
-  background-color: #073642;
-}
-
-/* 4. Hero */
-#theme-toggle:checked ~ .hero::before {
-  background: var(--color-primary);
-  opacity: 0.03;
-}
-
-#theme-toggle:checked ~ .hero .hero__name {
-  color: var(--color-secondary);
-  text-shadow: 2px 2px 0 rgba(38, 139, 210, 0.2);
-}
-
-/* 5. Navigation */
-#theme-toggle:checked ~ .site-header .nav-link {
-  color: var(--color-text-muted);
-}
-#theme-toggle:checked ~ .site-header .nav-link:hover {
-  color: var(--color-text);
-}
-
-/* 6. Buttons */
-#theme-toggle:checked ~ * .btn--primary {
-  background-color: var(--color-primary);
-  color: #fdf6e3;
-  box-shadow: 0 4px 0 #1a6a9e;
-}
-#theme-toggle:checked ~ * .btn--primary:hover {
-  background-color: #1e7bc4;
-  box-shadow: var(--glow-primary);
-}
-#theme-toggle:checked ~ * .btn--outline {
-  border-color: var(--color-secondary);
-  color: var(--color-secondary);
-}
-#theme-toggle:checked ~ * .btn--outline:hover {
-  background-color: var(--color-secondary);
-  color: #fdf6e3;
-}
-
-/* 7. Toggle Label */
-#theme-toggle:checked ~ .site-header .theme-toggle-label {
-  background-color: #073642;
-  border-color: var(--color-border);
-}

@@ -31,17 +31,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- ================================================
-       MAIN STYLESHEET
+       STYLESHEETS — Light (always) + Dark (prefers-color-scheme)
        ================================================ -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style-dark.css" media="(prefers-color-scheme: dark)">
 </head>
 <body>
-
-  <!-- ================================================
-       THEME TOGGLE CHECKBOX — FIRST CHILD OF BODY
-       Controls light/dark mode via CSS sibling selector.
-       ================================================ -->
-  <input type="checkbox" id="theme-toggle" aria-hidden="true" tabindex="-1">
 
   <!-- ================================================
        SKIP TO CONTENT — ACCESSIBILITY UTILITY
@@ -50,7 +45,7 @@
   <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
   <!-- ================================================
-       HEADER — Site identity, navigation & theme toggle
+       HEADER — Site identity & navigation
        ================================================ -->
   <header class="site-header" aria-label="Cabeçalho do site">
     <div class="container header-inner">
@@ -72,11 +67,6 @@
         </ul>
       </nav>
 
-      <!-- Theme Toggle Label — styled as sun/moon -->
-      <label for="theme-toggle" class="theme-toggle-label" aria-label="Alternar entre modo claro e escuro">
-        <span class="theme-toggle-icon" aria-hidden="true">☾</span>
-        <span class="theme-toggle-icon" aria-hidden="true">☀</span>
-      </label>
     </div>
   </header>
 
