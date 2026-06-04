@@ -5,198 +5,195 @@
 [![Zero JavaScript](https://img.shields.io/badge/JavaScript-0%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://en.wikipedia.org/wiki/JavaScript)
 [![WCAG AA](https://img.shields.io/badge/WCAG-AA%20Compliant-2E8B57?style=for-the-badge&logo=w3c&logoColor=white)](https://www.w3.org/WAI/WCAG2AA-Conformance)
 
-> A clean, semantic, and accessible portfolio built entirely with HTML5 and CSS3 — no JavaScript required.
-> Featuring a dual-theme identity that bridges street-level intensity with heroic clarity.
+> Portfólio semântico, acessível e limpo — construído inteiramente com HTML5 e CSS3, sem JavaScript.
+> Dual-theme com paleta Solarized (Light e Dark) para máxima legibilidade e conforto visual.
 
-![Portfolio Screenshot](https://via.placeholder.com/1200x630/070709/E63946?text=Matheus+Costa+de+Jesus)
-
----
-
-## Table of Contents
-
-- [About the Project](#about-the-project)
-- [Visual Identity](#visual-identity)
-- [Tech Stack](#tech-stack)
-- [Folder Structure](#folder-structure)
-- [Key Features](#key-features)
-- [How to Run](#how-to-run)
-- [Accessibility Notes](#accessibility-notes)
-- [SEO Notes](#seo-notes)
-- [License](#license)
+![Portfolio Screenshot](https://via.placeholder.com/1200x630/fdf6e3/268bd2?text=Matheus+Costa+de+Jesus)
 
 ---
 
-## About the Project
+## Sumário
 
-This portfolio is the digital home of **Matheus Costa de Jesus**, a Computer Science student
-and IT professional based in Lauro de Freitas, Bahia, Brazil. It showcases technical skills
-in Java, Python, Linux, and cybersecurity, alongside a solid professional background
-in industrial automation.
-
-**Technical Purpose:**
-The project demonstrates mastery of semantic HTML5, CSS architecture (custom properties,
-checkbox-hack theming, CSS Grid and Flexbox), and web accessibility (WCAG 2.1 AA). Built
-without any JavaScript, frameworks, or build tools — pure, hand-crafted code that prioritizes
-performance and web standards compliance.
-
-**Aesthetic Vision:**
-The design is not merely decorative; it is a storytelling device. Each of the two themes
-represents a different facet of the owner's identity — the intense, late-night focus of a
-developer (*Street Prestige*) and the bright, disciplined energy of a Bahian hero
-(*Tricolor Heroico*).
+- [Sobre o Projeto](#sobre-o-projeto)
+- [Identidade Visual](#identidade-visual)
+- [Stack Tecnológica](#stack-tecnológica)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Funcionalidades Principais](#funcionalidades-principais)
+- [Como Rodar](#como-rodar)
+- [Notas de Acessibilidade](#notas-de-acessibilidade)
+- [Notas de SEO](#notas-de-seo)
+- [Licença](#licença)
 
 ---
 
-## Visual Identity
+## Sobre o Projeto
 
-This portfolio carries a **dual visual identity** — each mode is a complete, intentional
-design statement, not just a color swap.
+Este portfólio é a residência digital de **Matheus Costa de Jesus**, Desenvolvedor Full-Stack
+baseado em Lauro de Freitas, Bahia, Brasil. Demonstra competências técnicas em Java, Python,
+JavaScript/TypeScript, React, Angular, Spring Boot e Node.js, com experiência profissional
+em automação industrial.
 
-### Dark Mode — Street Prestige (default)
+**Propósito Técnico:**
+O projeto demonstra domínio de HTML5 semântico, arquitetura CSS (custom properties,
+tematização via checkbox hack, CSS Grid e Flexbox), e acessibilidade web (WCAG 2.1 AA).
+Construído sem JavaScript, frameworks ou ferramentas de build — código puro e artesanal
+que prioriza performance e conformidade com padrões web.
 
-Inspired by four references that share an urban, night-time energy:
+**Visão Estética:**
+O design utiliza a paleta **Solarized** — um esquema de cores cuidadosamente projetado
+para legibilidade e conforto visual. O modo claro (Solarized Light) é o padrão,
+enquanto o modo escuro (Solarized Dark) oferece uma alternativa para ambientes com pouca luz.
 
-| Reference | Visual Contribution |
+---
+
+## Identidade Visual
+
+O portfólio possui uma **identidade visual dual** — cada modo é uma declaração de design
+completa e intencional, não apenas uma troca de cores.
+
+### Modo Claro — Solarized Light (padrão)
+
+Uma paleta quente e legível, inspirada em tons de areia e céu:
+
+| Elemento | Função |
 |---|---|
-| **Spider-Man: Into the Spider-Verse** | Halftone dot texture, diagonal accent stripe, neon red/blue contrast |
-| **Kendrick Lamar** | Near-black backgrounds, red and gold authority, restrained composition |
-| **Bruno Mars** | Gold accents signaling excellence, retro richness under modern sharpness |
-| **Jaden Smith** | Anti-conventional details, futuristic streetwear energy |
+| **Fundo** (`#fdf6e3`) | Branco quente (base3) — máximo contraste para leitura |
+| **Painéis** (`#eee8d5`) | Cinza areia (base2) — superfícies de cards e seções |
+| **Primário** (`#268bd2`) | Azul Solarized — títulos, botões, acento principal |
+| **Secundário** (`#2aa198`) | Ciano Solarized — links, acento secundário |
+| **Destaque** (`#b58900`) | Amarelo Solarized — ▲ Avicii gold, destaques |
 
-The mood: *a city at 2am seen from a rooftop. Kendrick on the headphones. Something being built.*
+### Modo Escuro — Solarized Dark
 
-### Light Mode — Tricolor Heroico
+Mesma paleta, invertida para ambientes escuros:
 
-A tribute to three iconic references that share the exact same **blue + red + white** tricolor language:
-
-| Reference | Identity |
+| Elemento | Função |
 |---|---|
-| **Esporte Clube Bahia** | *Tricolor de Aco* — the portfolio owner's home-state club, Salvador, Bahia |
-| **Spider-Man (Peter Parker)** | Classic Marvel suit — daylight heroism, clean and hopeful |
-| **Captain America** | The shield's composure — structured, trustworthy, open |
+| **Fundo** (`#002b36`) | Azul-marinho profundo (base03) |
+| **Painéis** (`#073642`) | Azul escuro (base02) — superfícies elevadas |
+| **Primário** (`#268bd2`) | Azul Solarized — constante em ambos os modos |
+| **Secundário** (`#2aa198`) | Ciano Solarized — constante em ambos os modos |
+| **Destaque** (`#b58900`) | Amarelo Solarized — constante em ambos os modos |
 
-The convergence is intentional: all three speak blue, red, and white.
-Light mode is the **daylight face of a Bahian hero**.
+### O Símbolo Avicii
 
-Design execution:
-- White background (`#FFFFFF`) for maximum clarity
-- Cards use heroic red (`#E62429`) with white text and a blue text-shadow
-- Headings in deep navy (`#002244`) — the Bahian sky and the Captain's composure
-- Concentric shield-ring decoration in the hero section (CSS-only `::after` pseudo-element)
+O triângulo equilátero é a marca pessoal, inspirada em **Avicii (Tim Bergling, 1989–2018)**.
+Renderizado via Unicode — nunca como imagem externa. Sempre em dourado (`#b58900`) em ambos os modos.
+Representa: precisão, três pilares da arte (código / infraestrutura / segurança), e ascensão.
 
-### The Avicii Symbol
+### Paleta de Cores
 
-The equilateral triangle is the personal logo mark, inspired by **Avicii (Tim Bergling, 1989–2018)**.
-Rendered via Unicode — never as an external image. Always gold (`#FFBE0B`) in both modes.
-Represents: precision, three pillars of craft (code / infrastructure / security), and rising.
+> Valores correspondentes à implementação CSS em `assets/css/style.css`.
 
-### Color Palettes
-
-> Values match the actual CSS implementation in `assets/css/style.css`.
-
-| CSS Variable | Dark Mode | Light Mode |
+| CSS Variable | Modo Claro (Light) | Modo Escuro (Dark) |
 |---|---|---|
-| `--color-bg` | `#070709` near-black | `#FFFFFF` pure white |
-| `--color-bg-secondary` | `#10101A` panel bg | `#F0F4F8` light grey-blue |
-| `--color-bg-card` | `#16161F` dark panel | `#E62429` heroic red |
-| `--color-primary` | `#E63946` Spider-red | `#E62429` unified hero red |
-| `--color-secondary` | `#3A86FF` electric blue | `#002244` deep navy |
-| `--color-accent` | `#FFBE0B` Avicii gold | `#FFBE0B` Avicii gold |
-| `--color-text` | `#F1FAEE` warm white | `#002244` deep navy |
-| `--color-text-muted` | `#8892A4` muted slate | `#335577` soft blue |
-| `--color-border` | `#1E1E30` dark border | `#CCD5E0` light border |
+| `--color-bg` | `#fdf6e3` branco quente | `#002b36` azul-marinho |
+| `--color-bg-secondary` | `#eee8d5` cinza areia | `#073642` azul escuro |
+| `--color-bg-card` | `#eee8d5` cinza areia | `#073642` azul escuro |
+| `--color-primary` | `#268bd2` azul Solarized | `#268bd2` azul Solarized |
+| `--color-secondary` | `#2aa198` ciano Solarized | `#2aa198` ciano Solarized |
+| `--color-accent` | `#b58900` amarelo Solarized | `#b58900` amarelo Solarized |
+| `--color-text` | `#002b36` azul-marinho | `#839496` cinza azulado |
+| `--color-text-muted` | `#586e75` cinza médio | `#586e75` cinza médio |
+| `--color-border` | `#93a1a1` cinza claro | `#586e75` cinza médio |
 
 ---
 
-## Tech Stack
+## Stack Tecnológica
 
-| Category | Technology / Feature |
+| Categoria | Tecnologia / Recurso |
 |---|---|
-| **Markup** | HTML5 — fully semantic element suite |
-| **Styling** | CSS3 — no preprocessors, no frameworks |
-| **Design System** | CSS Custom Properties with inline documentation on every variable |
-| **Theming** | CSS Checkbox Hack — dark/light toggle with zero JavaScript |
-| **Layout** | CSS Grid, Flexbox, `clamp()` for fluid responsive typography |
-| **Typography** | Google Fonts: Bebas Neue (display), Barlow (body), IBM Plex Mono (code) |
-| **Decorative FX** | `radial-gradient` halftone, pseudo-elements, `backdrop-filter` blur, neon `box-shadow` |
-| **Accessibility** | Skip link, `aria-*` attributes, `:focus-visible`, `<time datetime>`, WCAG AA contrast |
-| **SEO** | Open Graph meta tags, canonical link, semantic heading hierarchy |
+| **Markup** | HTML5 — suporte semântico completo |
+| **Estilo** | CSS3 — sem pré-processadores, sem frameworks |
+| **Sistema de Design** | CSS Custom Properties com documentação inline em cada variável |
+| **Tematização** | CSS Checkbox Hack — toggle dark/light com zero JavaScript |
+| **Layout** | CSS Grid, Flexbox, `clamp()` para tipografia fluida responsiva |
+| **Tipografia** | Google Fonts: Bebas Neue (display), Barlow (corpo), IBM Plex Mono (código) |
+| **Efeitos Decorativos** | `radial-gradient` halftone, pseudo-elementos, `backdrop-filter` blur, neon `box-shadow` |
+| **Acessibilidade** | Skip link, atributos `aria-*`, `:focus-visible`, `<time datetime>`, contraste WCAG AA |
+| **SEO** | Meta tags Open Graph, link canônico, hierarquia semântica de headings |
 
 ---
 
-## Folder Structure
+## Estrutura de Pastas
+
+```
 portfolio/
-├── index.html          — Main HTML document: full semantic structure
-├── README.md           — This file
+├── index.html          — Documento HTML principal: estrutura semântica completa
+├── README.md           — Este arquivo
 └── assets/
-├── css/
-│   └── style.css   — All styles: variables, layout, themes, accessibility
-└── images/
-└── (empty)     — No external images: all decoration is CSS-only
+    ├── css/
+    │   └── style.css   — Todos os estilos: variáveis, layout, temas, acessibilidade
+    └── images/
+        └── (vazio)     — Sem imagens externas: toda decoração é CSS-only
+```
 
 ---
 
-## Key Features
+## Funcionalidades Principais
 
-- **Semantic HTML5** — `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` for meaning, not presentation
-- **WCAG AA Accessibility** — skip link, ARIA labels, focus rings, `<time>` elements, 4.5:1 contrast minimum
-- **SEO-optimized** — meta description, Open Graph tags, canonical URL, structured heading hierarchy
-- **CSS-only dark/light toggle** — checkbox hack with `input` and `label`, zero JavaScript required
-- **CSS design system** — all values as custom properties, every variable commented with its purpose
-- **Responsive layout** — fluid from mobile to 4K with CSS Grid, Flexbox, and `clamp()`
-- **Dual visual identity** — Street Prestige (dark) and Tricolor Heroico (light) as independent design systems
-- **Sticky header with blur** — `position: sticky` + `backdrop-filter: blur(8px)` glass effect
-- **Heavily commented code** — every block explains the why, not just the what
+- **HTML5 Semântico** — `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` para significado, não apresentação
+- **Acessibilidade WCAG AA** — skip link, labels ARIA, focus rings, elementos `<time>`, contraste mínimo 4.5:1
+- **Otimizado para SEO** — meta description, tags Open Graph, URL canônica, hierarquia de headings estruturada
+- **Toggle dark/light CSS-only** — checkbox hack com `input` e `label`, zero JavaScript necessário
+- **Sistema de design CSS** — todos os valores como custom properties, cada variável comentada com sua finalidade
+- **Layout responsivo** — fluido do mobile ao 4K com CSS Grid, Flexbox e `clamp()`
+- **Identidade visual dual** — Solarized Light (claro) e Solarized Dark (escuro) como sistemas de design independentes
+- **Header fixo com blur** — `position: sticky` + `backdrop-filter: blur(8px)` efeito de vidro
+- **Código extensivamente comentado** — cada bloco explica o porquê, não apenas o quê
 
 ---
 
-## How to Run
+## Como Rodar
 
-No build step. No dependencies. No terminal commands needed.
+Nenhum passo de build. Nenhuma dependência. Nenhum comando de terminal necessário.
 
-```powershell
-# Clone the repository
+```bash
+# Clonar o repositório
 git clone https://github.com/mathdejesus/portfolio.git
 cd portfolio
+# Abrir no navegador (Linux)
+xdg-open index.html
+# Ou no Windows
 start index.html
 ```
 
-Or download the ZIP, extract it, and open `index.html` in any modern browser.
+Ou baixe o ZIP, extraia e abra `index.html` em qualquer navegador moderno.
 
 ---
 
-## Accessibility Notes
+## Notas de Acessibilidade
 
-| Implementation | Standard / Reason |
+| Implementação | Padrão / Motivo |
 |---|---|
-| Skip-to-content link | WCAG 2.1 SC 2.4.1 — keyboard users bypass nav to main content |
-| `aria-label` on every `section` | Screen readers announce the region before reading content |
-| `aria-labelledby` on `article` cards | Links each card to its own heading for an accessible name |
-| `aria-hidden` on decorative triangles | Prevents narration of decorative Unicode characters |
-| `tabindex="-1"` on `#theme-toggle` | Removes hidden checkbox from keyboard tab order |
-| `:focus-visible` outline in gold | Visible focus ring for keyboard, not triggered by mouse |
-| `<time datetime>` on all dates | Machine-readable dates for assistive tech and search engines |
-| Color contrast >= 4.5:1 | Both palettes validated against WCAG AA minimum |
+| Link skip-to-content | WCAG 2.1 SC 2.4.1 — usuários de teclado pulam navegação para conteúdo principal |
+| `aria-label` em cada `section` | Leitores de tela anunciam a região antes de ler o conteúdo |
+| `aria-labelledby` nos cards `article` | Vincula cada card ao seu próprio heading para nome acessível |
+| `aria-hidden` nos triângulos decorativos | Impede narração de caracteres Unicode decorativos |
+| `tabindex="-1"` no `#theme-toggle` | Remove checkbox oculto da ordem de tabulação do teclado |
+| `:focus-visible` outline em dourado | Anel de foco visível para teclado, não acionado pelo mouse |
+| `<time datetime>` em todas as datas | Datas legíveis por máquina para tecnologia assistiva e mecanismos de busca |
+| Contraste de cor >= 4.5:1 | Ambas as paletas validadas contra mínimo WCAG AA |
 
 ---
 
-## SEO Notes
+## Notas de SEO
 
-| Tag / Element | Purpose |
+| Tag / Elemento | Finalidade |
 |---|---|
-| `<title>` | "Name — Role" format for search engines and browser tabs |
-| `<meta name="description">` | ~155-char summary indexed by Google for search snippets |
-| `<meta name="author">` | Associates document with its creator |
-| Open Graph tags | Controls preview on LinkedIn, WhatsApp, and Twitter/X |
-| `<link rel="canonical">` | Prevents duplicate content indexing |
-| Single `<h1>` | Correct document outline — one top-level heading |
-| `<h2>` per section | Crawlable page structure for search engines |
-| `<nav>` with anchor links | Internal link map for search crawlers |
-| `lang="pt-BR"` on `<html>` | Language declaration for indexing and screen readers |
+| `<title>` | Formato "Nome — Cargo" para mecanismos de busca e abas do navegador |
+| `<meta name="description">` | Resumo de ~155 caracteres indexado pelo Google para trechos de busca |
+| `<meta name="author">` | Associa o documento ao seu criador |
+| Tags Open Graph | Controla pré-visualização em LinkedIn, WhatsApp e Twitter/X |
+| `<link rel="canonical">` | Impede indexação de conteúdo duplicado |
+| `<h1>` único | Esquema correto do documento — um heading de nível superior |
+| `<h2>` por seção | Estrutura de página rastreável para mecanismos de busca |
+| `<nav>` com links âncora | Mapa de links internos para rastreadores de busca |
+| `lang="pt-BR"` no `<html>` | Declaração de idioma para indexação e leitores de tela |
 
 ---
 
-## License
+## Licença
 
 MIT License — Copyright (c) 2026 Matheus Costa de Jesus
 
