@@ -28,9 +28,9 @@ GitHub Pages: `mathdejesus.github.io/portfolio/` — mirror do branch `main`.
 
 - Idioma: **pt-BR** (html lang, conteúdo, aria-labels, comentários)
 - CSS: custom properties, BEM-like naming, transições via `var(--transition)`
-- Temas: dark (padrão "Street Prestige") e light ("Tricolor Heroico") via `#theme-toggle:checked ~ *`
+- Temas: Solarized Light (padrão) e Solarized Dark via `#theme-toggle:checked ~ *`
 - PDF do currículo em `assets/Matheus_Costa_de_Jesus_PT-BR_Geral.pdf`
-- Badge ▲ (Avicii gold `#FFBE0B`) nas section titles — sempre Unicode, nunca imagem
+- Badge ▲ (Avicii gold `#b58900`) nas section titles — sempre Unicode, nunca imagem
 
 ## Skills disponíveis (globais em ~/.agents/skills/)
 
