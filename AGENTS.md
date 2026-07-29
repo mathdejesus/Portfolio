@@ -1,44 +1,34 @@
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
+
 # Portfolio — AGENTS.md
 
-> Static portfolio site: semântico, acessível, zero JS.
+> Bento Box Portfolio: Next.js (App Router), React, TypeScript, Tailwind CSS, Framer Motion.
 
 ## Stack
+- Next.js 16.2 (App Router), React 19.2, TypeScript 5, Tailwind CSS v4, Framer Motion 12
+- All components are `"use client"` (entire page is client-rendered)
+- Path alias `@/*` → `./src/*`
+- Utility: `cn()` from `src/lib/utils.ts` (clsx + tailwind-merge)
 
-- HTML5 + CSS3 puro — sem frameworks, sem build tools, sem dependências
-- Zero JavaScript — tema dark/light automático via `prefers-color-scheme` do SO
-- Sem dev server, sem teste, sem linter configurado
-- `assets/images/` intencionalmente vazio — toda decoração é CSS-only
+## Commands
+```bash
+npm run dev      # dev server
+npm run build    # production build
+npm run lint     # ESLint only (no separate typecheck)
+```
 
-## Arquitetura (3 arquivos)
+## Architecture
+- `src/data/portfolio.ts` — single source of truth for all content (hero, about, skills, projects, experience). Edit strictly here for curriculum updates.
+- `src/app/page.tsx` — single page, Bento Grid layout.
+- `src/components/` — `Hero`, `About`, `Skills`, `Projects`, `Experience`, `Footer`, `GlowCard`.
+- `public/Matheus_Costa_de_Jesus_PT-BR_Geral.pdf` — linked from Hero.
 
-| Arquivo | Papel |
-|---|---|
-| `index.html` | Conteúdo semântico completo (header, hero, about, skills, projects, experience, education, certifications, footer) — alinhado ao CV em `MATHEUS_COSTA_DE_JESUS_PT-BR.md` |
-| `assets/css/style.css` | Base: reset, custom properties (Solarized Light), layout, componentes, responsivo |
-| `assets/css/style-dark.css` | Override Solarized Dark — variáveis e ajustes finos, carregado com `media="(prefers-color-scheme: dark)"` |
-
-## Como rodar
-
-Abra `index.html` em qualquer browser. Nada mais.
-
-## Deploy
-
-GitHub Pages: `mathdejesus.github.io/portfolio/` — mirror do branch `main`.
-
-## Convenções
-
-- Idioma: **pt-BR** (html lang, conteúdo, aria-labels, comentários)
-- CSS: custom properties, BEM-like naming, transições via `var(--transition)`
-- Temas: Solarized Light (padrão, `style.css`) e Solarized Dark (`style-dark.css`, carregado via `<link media="(prefers-color-scheme: dark)">`). Tema é decidido pelo sistema operacional do visitante — sem toggle, sem JS
-- **Trocar tema do sistema operacional exige F5** — o tema é resolvido no carregamento da página
-- PDF do currículo em `assets/Matheus_Costa_de_Jesus_PT-BR_Geral.pdf`
-- Badge ▲ (Avicii gold `#b58900`) nas section titles — sempre Unicode, nunca imagem
-
-## Skills disponíveis (globais em ~/.agents/skills/)
-
-- `brainstorming` — antes de modificar design ou adicionar seções
-- `writing-plans` — planejar alterações
-- `frontend-design` — criar/estilizar componentes
-- `web-design-guidelines` — revisar acessibilidade e semântica
-- `systematic-debugging` — debug (ex: !important excessivo, grids sem media queries)
-- `verification-before-completion` — verificar antes de finalizar
+## Constraints
+- Dark mode only (`dark` class, `colorScheme: dark` forced in layout)
+- No test framework — no test files or test command
+- No CI/CD workflows found in repo
+- Fonts: Inter, Outfit, Fira Code via `next/font/google`

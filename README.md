@@ -1,212 +1,90 @@
 # Matheus Costa de Jesus — Portfolio
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Zero JavaScript](https://img.shields.io/badge/JavaScript-0%25-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://en.wikipedia.org/wiki/JavaScript)
-[![WCAG AA](https://img.shields.io/badge/WCAG-AA%20Compliant-2E8B57?style=for-the-badge&logo=w3c&logoColor=white)](https://www.w3.org/WAI/WCAG2AA-Conformance)
+[![Next.js](https://img.shields.io/badge/Next.js-16.2-000?logo=next.js)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss)](https://tailwindcss.com)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-F38020?logo=cloudflare)](https://pages.cloudflare.com)
 
-> Portfólio semântico, acessível e limpo — construído inteiramente com HTML5 e CSS3, sem JavaScript.
-> Dual-theme com paleta Solarized (Light e Dark) para máxima legibilidade e conforto visual.
-
-![Portfolio Screenshot](https://via.placeholder.com/1200x630/fdf6e3/268bd2?text=Matheus+Costa+de+Jesus)
-
----
-
-## Sumário
-
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Identidade Visual](#identidade-visual)
-- [Stack Tecnológica](#stack-tecnológica)
-- [Estrutura de Pastas](#estrutura-de-pastas)
-- [Funcionalidades Principais](#funcionalidades-principais)
-- [Como Rodar](#como-rodar)
-- [Notas de Acessibilidade](#notas-de-acessibilidade)
-- [Notas de SEO](#notas-de-seo)
-- [Licença](#licença)
+> Bento Box Portfolio — Next.js 16 (App Router), React 19, TypeScript 5, Tailwind CSS v4 e Framer Motion 12.
+> Dark mode nativo, grid responsivo, glow cards com mouse tracking.
 
 ---
 
-## Sobre o Projeto
+## Stack
 
-Este portfólio é a residência digital de **Matheus Costa de Jesus**, Desenvolvedor Full-Stack
-baseado em Lauro de Freitas, Bahia, Brasil. Demonstra competências técnicas em Java, Python,
-JavaScript/TypeScript, React, Angular, Spring Boot e Node.js, com experiência profissional
-em automação industrial.
+| Categoria | Tecnologia |
+|-----------|-----------|
+| **Framework** | Next.js 16.2 (App Router), static export |
+| **UI** | React 19.2, TypeScript 5 |
+| **Estilização** | Tailwind CSS v4 |
+| **Animações** | Framer Motion 12 |
+| **Ícones** | lucide-react + SVGs customizados |
+| **Deploy** | Cloudflare Pages (estático) |
 
-**Propósito Técnico:**
-O projeto demonstra domínio de HTML5 semântico, arquitetura CSS (custom properties,
-tematização via `prefers-color-scheme`, CSS Grid e Flexbox), e acessibilidade web
-(WCAG 2.1 AA). Construído sem JavaScript, frameworks ou ferramentas de build —
-código puro e artesanal que prioriza performance e conformidade com padrões web.
-
-**Visão Estética:**
-O design utiliza a paleta **Solarized** — um esquema de cores cuidadosamente projetado
-para legibilidade e conforto visual. O modo claro (Solarized Light) é o padrão,
-enquanto o modo escuro (Solarized Dark) oferece uma alternativa para ambientes com pouca luz.
-
----
-
-## Identidade Visual
-
-O portfólio possui uma **identidade visual dual** — cada modo é uma declaração de design
-completa e intencional, não apenas uma troca de cores.
-
-### Modo Claro — Solarized Light (padrão)
-
-Uma paleta quente e legível, inspirada em tons de areia e céu:
-
-| Elemento | Função |
-|---|---|
-| **Fundo** (`#fdf6e3`) | Branco quente (base3) — máximo contraste para leitura |
-| **Painéis** (`#eee8d5`) | Cinza areia (base2) — superfícies de cards e seções |
-| **Primário** (`#268bd2`) | Azul Solarized — títulos, botões, acento principal |
-| **Secundário** (`#2aa198`) | Ciano Solarized — links, acento secundário |
-| **Destaque** (`#b58900`) | Amarelo Solarized — ▲ Avicii gold, destaques |
-
-### Modo Escuro — Solarized Dark
-
-Mesma paleta, invertida para ambientes escuros:
-
-| Elemento | Função |
-|---|---|
-| **Fundo** (`#002b36`) | Azul-marinho profundo (base03) |
-| **Painéis** (`#073642`) | Azul escuro (base02) — superfícies elevadas |
-| **Primário** (`#268bd2`) | Azul Solarized — constante em ambos os modos |
-| **Secundário** (`#2aa198`) | Ciano Solarized — constante em ambos os modos |
-| **Destaque** (`#b58900`) | Amarelo Solarized — constante em ambos os modos |
-
-### O Símbolo Avicii
-
-O triângulo equilátero é a marca pessoal, inspirada em **Avicii (Tim Bergling, 1989–2018)**.
-Renderizado via Unicode — nunca como imagem externa. Sempre em dourado (`#b58900`) em ambos os modos.
-Representa: precisão, três pilares da arte (código / infraestrutura / segurança), e ascensão.
-
-### Paleta de Cores
-
-> Valores correspondentes à implementação CSS em `assets/css/style.css`.
-
-| CSS Variable | Modo Claro (Light) | Modo Escuro (Dark) |
-|---|---|---|
-| `--color-bg` | `#fdf6e3` branco quente | `#002b36` azul-marinho |
-| `--color-bg-secondary` | `#eee8d5` cinza areia | `#073642` azul escuro |
-| `--color-bg-card` | `#eee8d5` cinza areia | `#073642` azul escuro |
-| `--color-primary` | `#268bd2` azul Solarized | `#268bd2` azul Solarized |
-| `--color-secondary` | `#2aa198` ciano Solarized | `#2aa198` ciano Solarized |
-| `--color-accent` | `#b58900` amarelo Solarized | `#b58900` amarelo Solarized |
-| `--color-text` | `#002b36` azul-marinho | `#839496` cinza azulado |
-| `--color-text-muted` | `#586e75` cinza médio | `#586e75` cinza médio |
-| `--color-border` | `#93a1a1` cinza claro | `#586e75` cinza médio |
-
----
-
-## Stack Tecnológica
-
-| Categoria | Tecnologia / Recurso |
-|---|---|
-| **Markup** | HTML5 — suporte semântico completo |
-| **Estilo** | CSS3 — sem pré-processadores, sem frameworks |
-| **Sistema de Design** | CSS Custom Properties com documentação inline em cada variável |
-| **Tematização** | `prefers-color-scheme` — reage automaticamente ao tema do sistema operacional, zero JavaScript |
-| **Layout** | CSS Grid, Flexbox, `clamp()` para tipografia fluida responsiva |
-| **Tipografia** | Google Fonts: Bebas Neue (display), Barlow (corpo), IBM Plex Mono (código) |
-| **Efeitos Decorativos** | `radial-gradient` halftone, pseudo-elementos, `backdrop-filter` blur, neon `box-shadow` |
-| **Acessibilidade** | Skip link, atributos `aria-*`, `:focus-visible`, `<time datetime>`, contraste WCAG AA |
-| **SEO** | Meta tags Open Graph, link canônico, hierarquia semântica de headings |
-
----
-
-## Estrutura de Pastas
+## Estrutura
 
 ```
-portfolio/
-├── index.html          — Documento HTML principal: estrutura semântica completa
-├── README.md           — Este arquivo
-└── assets/
-    ├── css/
-    │   ├── style.css       — Base: variáveis Solarized Light + layout + componentes
-    │   └── style-dark.css  — Solarized Dark: override carregado em `prefers-color-scheme: dark`
-    └── images/
-        └── (vazio)     — Sem imagens externas: toda decoração é CSS-only
+src/
+├── app/
+│   ├── layout.tsx       — Layout raiz (fontes, metadata, dark mode)
+│   ├── page.tsx         — Página única com Bento Grid
+│   └── globals.css      — Tema escuro, grid pattern, scrollbar
+├── components/
+│   ├── Hero.tsx         — Destaque: nome, cargo, links sociais
+│   ├── About.tsx        — Formação, bio e objetivo
+│   ├── Skills.tsx       — Grid de habilidades (Java, Python, SQL)
+│   ├── Experience.tsx   — Trajetória M. Dias Branco / SRE industrial
+│   ├── Projects.tsx     — Cards de projetos com GitHub links
+│   ├── Footer.tsx       — Footer com ano corrente
+│   ├── GlowCard.tsx     — Card reutilizável com efeito glow por mouse
+│   └── SocialIcons.tsx  — SVGs inline do GitHub e LinkedIn
+├── data/
+│   └── portfolio.ts     — Fonte única de dados (currículo)
+└── lib/
+    └── utils.ts         — cn() (clsx + tailwind-merge)
 ```
-
----
-
-## Funcionalidades Principais
-
-- **HTML5 Semântico** — `header`, `nav`, `main`, `section`, `article`, `aside`, `footer` para significado, não apresentação
-- **Acessibilidade WCAG AA** — skip link, labels ARIA, focus rings, elementos `<time>`, contraste mínimo 4.5:1
-- **Otimizado para SEO** — meta description, tags Open Graph, URL canônica, hierarquia de headings estruturada
-- **Tema automático via `prefers-color-scheme`** — Solarized Light/Dark sincronizado com o sistema operacional, zero JavaScript e zero toggle (recarregue com F5 para aplicar mudança de tema do SO)
-- **Sistema de design CSS** — todos os valores como custom properties, cada variável comentada com sua finalidade
-- **Layout responsivo** — fluido do mobile ao 4K com CSS Grid, Flexbox e `clamp()`
-- **Identidade visual dual** — Solarized Light (claro) e Solarized Dark (escuro) como sistemas de design independentes
-- **Header fixo com blur** — `position: sticky` + `backdrop-filter: blur(8px)` efeito de vidro
-- **Código extensivamente comentado** — cada bloco explica o porquê, não apenas o quê
-
----
 
 ## Como Rodar
 
-Nenhum passo de build. Nenhuma dependência. Nenhum comando de terminal necessário.
-
 ```bash
-# Clonar o repositório
-git clone https://github.com/mathdejesus/portfolio.git
-cd portfolio
-# Abrir no navegador (Linux)
-xdg-open index.html
-# Ou no Windows
-start index.html
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # produz build estático em out/
+npm run lint     # ESLint
 ```
 
-Ou baixe o ZIP, extraia e abra `index.html` em qualquer navegador moderno.
+## Conteúdo
+
+Todo o conteúdo (hero, about, skills, projects, experience) está centralizado em `src/data/portfolio.ts`.
+Para atualizar o currículo, edite apenas este arquivo.
+
+## Deploy — Cloudflare Pages
+
+O projeto já está configurado para static export (`next.config.ts` com `output: "export"`).
+
+### Via dashboard (recomendado)
+
+1. Faça login em [Cloudflare Dashboard](https://dash.cloudflare.com)
+2. Acesse **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
+3. Selecione o repositório
+4. Configure:
+
+| Config | Valor |
+|--------|-------|
+| Build command | `npm run build` |
+| Build output directory | `out` |
+
+5. Deploy
+
+### Via CLI (wrangler)
+
+```bash
+npm install --save-dev wrangler
+npx wrangler pages deploy out
+```
 
 ---
 
-## Notas de Acessibilidade
-
-| Implementação | Padrão / Motivo |
-|---|---|
-| Link skip-to-content | WCAG 2.1 SC 2.4.1 — usuários de teclado pulam navegação para conteúdo principal |
-| `aria-label` em cada `section` | Leitores de tela anunciam a região antes de ler o conteúdo |
-| `aria-labelledby` nos cards `article` | Vincula cada card ao seu próprio heading para nome acessível |
-| `aria-hidden` nos triângulos decorativos | Impede narração de caracteres Unicode decorativos |
-| `tabindex="-1"` no toggle | (Removido — não há mais toggle na página) |
-| `:focus-visible` outline em dourado | Anel de foco visível para teclado, não acionado pelo mouse |
-| `<time datetime>` em todas as datas | Datas legíveis por máquina para tecnologia assistiva e mecanismos de busca |
-| Contraste de cor >= 4.5:1 | Ambas as paletas validadas contra mínimo WCAG AA |
-
----
-
-## Notas de SEO
-
-| Tag / Elemento | Finalidade |
-|---|---|
-| `<title>` | Formato "Nome — Cargo" para mecanismos de busca e abas do navegador |
-| `<meta name="description">` | Resumo de ~155 caracteres indexado pelo Google para trechos de busca |
-| `<meta name="author">` | Associa o documento ao seu criador |
-| Tags Open Graph | Controla pré-visualização em LinkedIn, WhatsApp e Twitter/X |
-| `<link rel="canonical">` | Impede indexação de conteúdo duplicado |
-| `<h1>` único | Esquema correto do documento — um heading de nível superior |
-| `<h2>` por seção | Estrutura de página rastreável para mecanismos de busca |
-| `<nav>` com links âncora | Mapa de links internos para rastreadores de busca |
-| `lang="pt-BR"` no `<html>` | Declaração de idioma para indexação e leitores de tela |
-
----
-
-## Licença
-
-MIT License — Copyright (c) 2026 Matheus Costa de Jesus
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software
-and associated documentation files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions: The above copyright notice and this
-permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
-
----
-
-Built with precision by [Matheus Costa de Jesus](https://github.com/mathdejesus)
-Lauro de Freitas, Bahia, Brazil · 2026
+Built with precision by [Matheus Costa de Jesus](https://github.com/mathofjesus)
+Lauro de Freitas, Bahia, Brasil · 2026
